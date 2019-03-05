@@ -1,4 +1,4 @@
-## makeCacheMatrix is a function that tke a matrix "x" and apply 4 functions on "x"
+## makeCacheMatrix is a function that takes a matrix "x" and apply 4 functions on "x"
 
 makeCacheMatrix <- function(x = matrix()) {
   inverse_result <- NULL
@@ -31,7 +31,7 @@ cacheSolve <- function(x, ...) {
     message("getting cached data")
     return(inverse)
   }
-## calculate the matrix inverse if not exist before
+## calculate and return the matrix inverse if not exist before
   data <- x$getMatrix()
   inverse <- solve(data, ...)
   x$setInverse(inverse)
